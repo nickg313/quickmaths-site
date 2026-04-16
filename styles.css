@@ -531,19 +531,14 @@ a {
   top: calc(var(--nav-height) + 2rem);
 }
 
-.founder-image-placeholder {
+.founder-image {
   width: 100%;
-  aspect-ratio: 1;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  color: var(--text-muted);
   max-width: 320px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  display: block;
   margin: 0 auto;
 }
 
