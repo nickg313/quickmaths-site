@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Quick Maths - how we collect, use, and protect your personal information under UK GDPR.">
+    <meta name="robots" content="index, follow">
+    <title>Privacy Policy | Quick Maths</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Matches styles.css variable system */
+        :root {
+            --bg-base: #020617;
+            --bg-surface: #0f172a;
+            --bg-surface-glass: rgba(15, 23, 42, 0.6);
+            --bg-surface-hover: #1e293b;
+            --accent-primary: #F97316;
+            --accent-hover: #EA580C;
+            --accent-glow: rgba(249, 115, 22, 0.4);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --border-glow: rgba(249, 115, 22, 0.2);
+            --nav-height: 80px;
+            --container-width: 860px;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            display: flex;
+            align-items: center;
+            z-index: 100;
+            background: var(--bg-surface-glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo .logo-accent {
+            color: var(--accent-primary);
+        }
+
+        .nav-back {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-back:hover {
+            color: var(--text-main);
+        }
+
+        /* Hero section with glow */
+        .page-hero {
+            position: relative;
+            padding: calc(var(--nav-height) + 5rem) 0 3rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .page-hero-glow {
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            height: 500px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        .page-hero-inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-muted);
+            padding: 0.35rem 1rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            letter-spacing: 0.02em;
+        }
+
+        h1.page-title {
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        h1.page-title span {
+            background: linear-gradient(135deg, #F97316 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .updated {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Content */
+        .content {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 6rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent-primary), transparent);
+        }
+
+        .intro-card p {
+            color: var(--text-muted);
+            font-size: 1.02rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 3.5rem;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.01em;
+            color: var(--text-main);
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        h2 .section-num {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            font-variant-numeric: tabular-nums;
+            padding: 0.25rem 0.6rem;
+            background: rgba(249, 115, 22, 0.08);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--radius-sm);
+            line-height: 1;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 1rem 0 1.25rem 0;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.65rem;
+            color: var(--text-muted);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        a.inline-link {
+            color: var(--accent-primary);
+            font-weight: 500;
+            border-bottom: 1px solid rgba(249, 115, 22, 0.3);
+            transition: border-color 0.2s ease;
+        }
+
+        a.inline-link:hover {
+            border-bottom-color: var(--accent-primary);
+        }
+
+        /* Contact callout */
+        .contact-callout {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-base) 100%);
+            border: 1px solid var(--border-glow);
+            border-radius: var(--radius-md);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-callout::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            height: 200px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .contact-callout h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .contact-callout p {
+            margin-bottom: 1.25rem;
+            position: relative;
+        }
+
+        .contact-email-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.75rem;
+            background: var(--accent-primary);
+            color: white;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--accent-hover);
+            box-shadow: 0 4px 14px 0 var(--accent-glow);
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .contact-email-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 var(--accent-glow);
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 2.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .footer a {
+            color: var(--text-muted);
+            margin-left: 0.5rem;
+        }
+
+        .footer a:hover {
+            color: var(--text-main);
+        }
+
+        /* Scroll animation */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 640px) {
+            .page-hero {
+                padding: calc(var(--nav-height) + 3rem) 0 2rem;
+            }
+
+            .content {
+                padding: 1.5rem 1.25rem 4rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-top: 2.5rem;
+            }
+
+            .intro-card {
+                padding: 1.5rem;
+            }
+
+            .contact-callout {
+                padding: 1.75rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Quick<span class="logo-accent">Maths</span></a>
+            <a href="/" class="nav-back">← Back to home</a>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-glow"></div>
+        <div class="page-hero-inner">
+            <span class="badge">Legal</span>
+            <h1 class="page-title">Privacy <span>Policy</span></h1>
+            <p class="updated">Last updated: 20 April 2026</p>
+        </div>
+    </section>
+
+    <main class="content">
+        <div class="intro-card animate-on-scroll">
+            <p>This Privacy Policy explains how Quick Maths ("we," "us," or "our") collects, uses, and protects personal information when you interact with our Facebook and Instagram advertisements, submit information through our lead forms, visit our website, or otherwise engage with our services. We are committed to protecting your privacy in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+        </div>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">01</span>Who we are</h2>
+            <p>Quick Maths is an online A-Level Mathematics tutoring service helping students achieve A* grades. For any privacy-related questions or to exercise your data rights, contact us at <a href="mailto:nick@quickmath.io" class="inline-link">nick@quickmath.io</a>.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">02</span>Information we collect</h2>
+            <p>When you complete a lead form on one of our Facebook or Instagram advertisements, or contact us through our website, we may collect:</p>
+            <ul>
+                <li>Full name</li>
+                <li>Email address</li>
+                <li>Phone number (optional, only if you choose to provide it)</li>
+                <li>Responses to qualifying questions (such as your child's year group or exam board)</li>
+            </ul>
+            <p>We do not collect sensitive personal data such as financial information, identity documents, or health data through our advertisements or website.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">03</span>How we use your information</h2>
+            <p>We use the information you provide to:</p>
+            <ul>
+                <li>Contact you about the free cohort, tutoring service, or resource you enquired about</li>
+                <li>Send relevant educational content, cohort updates, and service information via email</li>
+                <li>Contact you via WhatsApp, but only if you have voluntarily provided a phone number</li>
+                <li>Improve our services and better understand what potential customers are looking for</li>
+            </ul>
+            <p>We will <strong>never</strong> sell, rent, or share your personal data with third-party marketers.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">04</span>Legal basis for processing</h2>
+            <p>Under UK GDPR, our legal basis for processing your personal data is:</p>
+            <ul>
+                <li><strong>Consent:</strong> You have voluntarily submitted your information through our lead form or contact form, consenting to us contacting you.</li>
+                <li><strong>Legitimate interests:</strong> To provide you with the service, information, or resource you specifically requested.</li>
+            </ul>
+            <p>You may withdraw consent at any time — see Section 7 for how.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">05</span>How we store your information</h2>
+            <p>Your information is stored securely and only accessed by authorised personnel. We retain your data only for as long as necessary to fulfil the purpose for which it was collected, or as required by law.</p>
+            <p>If you do not become a customer and do not engage with our communications, we will delete your data within 24 months of your initial submission.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">06</span>Who we share your data with</h2>
+            <p>We may share your information with:</p>
+            <ul>
+                <li><strong>Meta (Facebook/Instagram):</strong> as part of their standard lead ad service, in accordance with their own privacy policy</li>
+                <li><strong>Email service providers</strong> (such as Mailchimp or ConvertKit) for the sole purpose of sending you communications you have signed up for</li>
+                <li><strong>Community platforms</strong> (such as Skool) if you join our community, limited to what is necessary to grant you access</li>
+                <li><strong>Legal or regulatory authorities:</strong> only where required by law</li>
+            </ul>
+            <p>We do not share your data with any other third parties.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">07</span>Your rights</h2>
+            <p>Under UK GDPR, you have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you</li>
+                <li>Request correction of inaccurate data</li>
+                <li>Request deletion of your data (the "right to be forgotten")</li>
+                <li>Withdraw consent at any time</li>
+                <li>Lodge a complaint with the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener" class="inline-link">ico.org.uk</a></li>
+            </ul>
+            <p>To exercise any of these rights, email us at <a href="mailto:nick@quickmath.io" class="inline-link">nick@quickmath.io</a>. We will respond within one month.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">08</span>Cookies and tracking</h2>
+            <p>When you visit our website, we may use cookies to understand site usage and improve your experience. We may also use Meta Pixel or similar tracking technologies to measure the effectiveness of our advertisements and show relevant content to people who have engaged with us.</p>
+            <p>You can control cookies through your browser settings at any time. Disabling cookies will not prevent you from using our website.</p>
+        </section>
+
+        <section class="animate-on-scroll">
+            <h2><span class="section-num">09</span>Changes to this policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. The latest version will always be available at this URL, and the "Last updated" date at the top of this page will reflect any changes.</p>
+        </section>
+
+        <div class="contact-callout animate-on-scroll">
+            <h3>Got questions about your data?</h3>
+            <p>For anything related to this policy, your personal data, or exercising your rights — just reach out.</p>
+            <a href="mailto:nick@quickmath.io" class="contact-email-btn">
+                nick@quickmath.io
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            © 2026 Quick Maths. All rights reserved.
+            <a href="/">Return home</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
