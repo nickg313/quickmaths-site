@@ -377,6 +377,7 @@ a {
 
 @media(min-width: 768px) {
   .feature-card.span-2 { grid-column: span 2; }
+  .feature-card.span-3 { grid-column: 1 / -1; }
 }
 
 .feature-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
