@@ -288,6 +288,20 @@ a {
   -webkit-backdrop-filter: blur(12px);
 }
 
+.spots-tracker-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.spots-tracker-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-color);
+  margin: 0.25rem 0;
+}
+
 .spots-tracker-label {
   font-size: 0.75rem;
   font-weight: 600;
