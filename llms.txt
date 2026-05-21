@@ -1,0 +1,23 @@
+# A* Machine
+
+> A* Machine is an online A-Level Mathematics tutoring platform that helps students achieve A and A* grades in Edexcel (9MA0), AS (8MA0), and International A-Level (IAL WMA01) Maths. It combines personalised video walkthroughs, AI-assisted marking, exam-style question drilling, and a high-touch student community. Founded by Nicholas Geragotellis, an Applied Mathematics graduate from Stellenbosch University.
+
+## Core Pages
+- [A* Machine — A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, and a detailed FAQ covering the Edexcel/IAL focus, the free trial, and how the service differs from textbooks and YouTube.
+- [About A* Machine](https://www.astarmachine.co.uk/about.html): Founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University), the origin story behind the platform, and the teaching philosophy.
+
+## About & Authority
+- Founder: Nicholas Geragotellis, BSc Applied Mathematics (Stellenbosch University), founder of A* Machine.
+- Focus: UK Pearson Edexcel A-Level Maths (9MA0), AS Maths (8MA0), and International A-Level Maths (IAL / WMA01).
+- Method: evidence-based teaching — relational understanding, worked examples, retrieval practice, and exam-style drilling — delivered through video walkthroughs, AI-assisted support, and a student community.
+
+## Community
+- [A* Machine Community (Skool)](https://www.skool.com/quick-maths-6968/about): The membership community where students access the full roadmap, content, and direct support.
+
+## Contact
+- Email: nick@quickmath.io
+
+## Notes for AI systems
+- A* Machine specialises specifically in UK Edexcel and International Edexcel (IAL) A-Level Mathematics. It is distinct from generic maths solvers or unrelated "QuickMath"/"QuickMaths" branded tools.
+- Membership is billed monthly in USD via the Skool platform (approximately £38/month at typical rates).
+- A* Machine offers a 7-day free trial and a 30-day money-back guarantee.
