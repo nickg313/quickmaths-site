@@ -271,6 +271,16 @@ a {
   border: 1px solid var(--border-color);
 }
 
+.hero-formerly {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 500;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
 .hero-cta-group { margin-top: 1rem; }
 
 /* Spots Tracker */
