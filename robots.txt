@@ -1,4 +1,4 @@
-# robots.txt for quickmath.io
+# robots.txt for astarmachine.co.uk
 # Allows all reputable search engine and AI crawlers
 # Last updated: 2026-05-20
 
@@ -66,4 +66,4 @@ User-agent: Amazonbot
 Allow: /
 
 # Sitemap
-Sitemap: https://www.quickmath.io/sitemap.xml
+Sitemap: https://www.astarmachine.co.uk/sitemap.xml
