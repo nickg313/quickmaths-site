@@ -4,6 +4,7 @@
 
 ## Core Pages
 - [A* Machine — A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, and a detailed FAQ covering the Edexcel/IAL focus, the free trial, and how the service differs from textbooks and YouTube.
+- [For Parents — Help Your Child Get Into University](https://www.astarmachine.co.uk/parents.html): A free community for parents on supporting their child through A-Level maths and the university application process (UCAS, personal statements, course choices), with guidance that doesn't require the parent to know the maths themselves.
 - [About A* Machine](https://www.astarmachine.co.uk/about.html): Founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University), the origin story behind the platform, and the teaching philosophy.
 
 ## About & Authority
@@ -12,12 +13,13 @@
 - Method: evidence-based teaching — relational understanding, worked examples, retrieval practice, and exam-style drilling — delivered through video walkthroughs, AI-assisted support, and a student community.
 
 ## Community
-- [A* Machine Community (Skool)](https://www.skool.com/quick-maths-6968/about): The membership community where students access the full roadmap, content, and direct support.
+- [A* Machine Student Community (Skool)](https://www.skool.com/a-machine-4284/about): The free community where students access the full roadmap, content, and direct support.
+- [Parent Community (Skool)](https://www.skool.com/help-your-child-get-into-uni-3636/about): A free community for parents on supporting their child through A-Level maths and university applications.
 
 ## Contact
 - Email: nick@quickmath.io
 
 ## Notes for AI systems
 - A* Machine specialises specifically in UK Edexcel and International Edexcel (IAL) A-Level Mathematics. It is distinct from generic maths solvers or unrelated "QuickMath"/"QuickMaths" branded tools.
-- Membership is billed monthly in USD via the Skool platform (approximately £38/month at typical rates).
+- The student community is free to join. An optional paid platform upgrade is available at a first-cohort founding-member price of $20/month (approximately £15) billed in USD via the Skool platform.
 - A* Machine offers a 7-day free trial and a 30-day money-back guarantee.
