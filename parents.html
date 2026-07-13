@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Your Child Get Into University — Free Parent Community | A* Machine</title>
+    <title>A-Level Maths Help for Your Child — Free University Roadmap | A* Machine</title>
     <meta name="description"
-        content="A free community for parents: practical guidance on supporting your child through A-Level maths and the university application process — UCAS, personal statements, and grades that open doors.">
+        content="Focused A-Level Maths help for Edexcel students aiming for an A or A*. Parents: get our free personalised University Roadmap and join a free community supporting your child to the grades top universities want.">
     <link rel="canonical" href="https://www.astarmachine.co.uk/parents.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,18 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Privacy-friendly analytics by Plausible -->
+    <!-- Privacy-friendly analytics by Plausible (cookieless) -->
     <script async src="https://plausible.io/js/pa-2ghQMo5XKTQo2K9t4yTyc.js"></script>
     <script>
         window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
         plausible.init()
     </script>
+
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- NOTE: The Meta Pixel is intentionally NOT loaded here. It is a non-essential
+         cookie and is injected only after the visitor grants consent (see script at end). -->
 
     <script type="application/ld+json">
     [
@@ -28,17 +34,13 @@
         "@type": "WebPage",
         "@id": "https://www.astarmachine.co.uk/parents.html#webpage",
         "url": "https://www.astarmachine.co.uk/parents.html",
-        "name": "Help Your Child Get Into University — Free Parent Community",
-        "description": "A free community for parents supporting their child through A-Level maths and university applications.",
+        "name": "A-Level Maths Help for Your Child — Free University Roadmap",
+        "description": "Focused A-Level Maths help for Edexcel students aiming for an A or A*. Parents get a free personalised University Roadmap and a free community.",
         "isPartOf": {
           "@id": "https://www.astarmachine.co.uk/#website"
         },
         "about": {
           "@id": "https://www.astarmachine.co.uk/#organization"
-        },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".faq-answer"]
         }
       },
       {
@@ -47,10 +49,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Is the parent community really free?",
+            "name": "What exactly do I get for free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes — the parent community on Skool is completely free to join, no card needed. Inside you'll find practical guidance on supporting your child through A-Level maths and the university application process, plus a community of parents going through the same thing."
+              "text": "Enter your email and we'll send you a free personalised University Roadmap — the path from where your child is now to the A-Level Maths grades top universities want. You can then join our free community for ongoing support, with no card needed."
             }
           },
           {
@@ -58,15 +60,15 @@
             "name": "Do I need to understand A-Level maths myself to help?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Not at all. The community is built so you can support your child without needing to do the maths yourself — you'll learn how to spot when they're stuck, how to keep them on track, and where the real exam pressure points are."
+              "text": "No. Everything is built so you can support your child without doing the maths yourself — you'll see where they are, what the real exam pressure points are, and how to keep them on track for an A or A*."
             }
           },
           {
             "@type": "Question",
-            "name": "Does this also help with university applications?",
+            "name": "Is this specifically for Edexcel A-Level Maths?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Alongside the A-Level maths support, the community covers the university application journey — UCAS, personal statements, choosing courses, and how strong grades open doors to top universities."
+              "text": "Yes. A* Machine is focused A-Level Maths help built around the Edexcel specification, aimed squarely at students working towards an A or A* grade."
             }
           }
         ]
@@ -90,30 +92,45 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link">For Students</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="https://www.skool.com/help-your-child-get-into-uni-3636/about" target="_blank" rel="noopener" class="btn btn-outline sm">Join Parent Community</a>
+                <a href="#lead-capture" class="btn btn-outline sm" data-scroll-capture>Get the free roadmap</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="section hero">
+    <!-- Hero Section (no scroll-animation: capture must be visible immediately) -->
+    <header class="section hero hero-parents">
         <div class="hero-bg-glow"></div>
-        <div class="container hero-container animate-on-scroll">
-            <span class="badge">🎓 Free community for parents — A-Level maths &amp; university</span>
-            <h1 class="hero-title">Help your child get into a top university.</h1>
-            <p class="hero-subtitle">A free community for parents who want to give their child the best shot at university &mdash; with practical guidance on supporting them through A-Level maths and navigating the application process, from UCAS to personal statements. You don't need to be a maths expert. You just need the right roadmap.</p>
-            <div class="hero-cta-group">
-                <div class="chooser-buttons">
-                    <a href="https://www.skool.com/help-your-child-get-into-uni-3636/about" target="_blank" rel="noopener" class="btn btn-primary lg">Join the Free Parent Community</a>
+        <div class="container hero-container">
+            <span class="badge">🎓 For parents of A-Level Maths students</span>
+            <h1 class="hero-title">Your child's A* in A-Level Maths.</h1>
+            <p class="hero-subtitle">Focused Edexcel A-Level Maths help for students aiming for an A or A* &mdash; the grades that unlock top universities. Get our free, personalised <strong>University Roadmap</strong>: the exact path from where your child is now to the grade they need.</p>
+
+            <!-- ===== LEAD CAPTURE (two-state) ===== -->
+            <div class="lead-capture" id="lead-capture">
+                <!-- STATE A: email capture -->
+                <div id="state-a">
+                    <label class="capture-label" for="parent-email">Send me the free University Roadmap</label>
+                    <div class="capture-row">
+                        <input id="parent-email" name="email" type="email" inputmode="email" autocomplete="email"
+                            placeholder="your@email.com" aria-describedby="privacy-note" />
+                        <button id="capture-btn" type="button" class="btn btn-primary lg" disabled aria-disabled="true">
+                            Get the roadmap
+                        </button>
+                    </div>
+                    <p class="privacy-note" id="privacy-note">
+                        Free &middot; No card needed. We'll email you the roadmap and occasional A-Level Maths tips. See our
+                        <a href="privacy.html">privacy policy</a>.
+                    </p>
                 </div>
-                <p class="reassurance">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                    100% free to join &middot; No card needed
-                </p>
-                <p class="hero-formerly" style="margin-top: 1.5rem;">Your child is the one studying? <a href="index.html" style="color: var(--accent-primary);">See the student side &rarr;</a></p>
+                <!-- STATE B: confirmation -->
+                <div id="state-b" hidden>
+                    <p class="confirm-line">✅ Done &mdash; your University Roadmap is on its way to your inbox.</p>
+                    <p class="confirm-sub">Next step: join the free community to put it into action alongside other parents.</p>
+                    <a id="join-btn" class="btn btn-primary lg" href="#">Join the free community</a>
+                </div>
             </div>
+
+            <p class="hero-formerly" style="margin-top: 1.5rem;">Your child is the one studying? <a href="index.html" style="color: var(--accent-primary);">See the student side &rarr;</a></p>
         </div>
     </header>
 
@@ -121,7 +138,7 @@
     <section class="section problem">
         <div class="container animate-on-scroll">
             <div class="section-header center">
-                <h2 class="section-title">You want to help &mdash; but it's hard to know <span>how.</span></h2>
+                <h2 class="section-title">You want to help with the maths &mdash; but it's hard to know <span>how.</span></h2>
             </div>
             <div class="grid problem-grid">
                 <div class="card problem-card">
@@ -134,8 +151,8 @@
                         </svg>
                     </div>
                     <h3>The maths has moved on</h3>
-                    <p>A-Level maths today looks nothing like it did when you studied. You want to help your child, but
-                        you can't sit down and work through a past paper with them.</p>
+                    <p>A-Level Maths today looks nothing like it did when you studied. You want to help, but you can't sit
+                        down and work through an Edexcel past paper with them.</p>
                 </div>
                 <div class="card problem-card">
                     <div class="card-icon red">
@@ -146,46 +163,46 @@
                         </svg>
                     </div>
                     <h3>Tutoring is expensive &amp; slow</h3>
-                    <p>Private tutors charge £40&ndash;£80 an hour for a single session a week. It adds up fast, and it
-                        still leaves your child stuck the other six days.</p>
+                    <p>Private maths tutors charge a lot for a single hour a week &mdash; and it still leaves your child
+                        stuck the other six days, right when the exam is closing in.</p>
                 </div>
                 <div class="card problem-card">
                     <div class="card-icon red">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                            <circle cx="12" cy="8" r="7" />
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
                         </svg>
                     </div>
-                    <h3>The uni process is a maze</h3>
-                    <p>UCAS, personal statements, course choices, entry requirements &mdash; the application journey is
-                        confusing and high-stakes, and nobody hands you a map.</p>
+                    <h3>Grades decide the offer</h3>
+                    <p>For the most competitive university courses, A-Level Maths is make-or-break. The difference between
+                        a B and an A* can decide which offers your child gets.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solution / What You Get Section -->
+    <!-- What's inside (free) Section -->
     <section class="section solution">
         <div class="container animate-on-scroll">
             <div class="section-header">
-                <h2 class="section-title">What you get inside the community.</h2>
-                <p class="section-subtitle">Everything you need to support your child with confidence &mdash; without doing the maths yourself.</p>
+                <h2 class="section-title">What you get for free.</h2>
+                <p class="section-subtitle">Start with the roadmap, then join the free community &mdash; everything here is focused on the A-Level Maths grade.</p>
             </div>
             <div class="grid feature-grid">
                 <div class="card feature-card">
                     <div class="card-icon accent">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            <path d="M3 6l9-4 9 4-9 4-9-4z" />
+                            <path d="M3 6v6l9 4 9-4V6" />
+                            <line x1="12" y1="22" x2="12" y2="10" />
                         </svg>
                     </div>
                     <div class="feature-content">
-                        <h3>University Application Guidance</h3>
-                        <p>Clear, step-by-step help with UCAS, personal statements, course choices and entry
-                            requirements &mdash; so you can guide your child toward the right offers.</p>
+                        <h3>A Personalised University Roadmap</h3>
+                        <p>A clear, step-by-step path from your child's current grade to the A or A* their target
+                            universities are asking for &mdash; sent straight to your inbox.</p>
                     </div>
                 </div>
                 <div class="card feature-card">
@@ -197,9 +214,9 @@
                         </svg>
                     </div>
                     <div class="feature-content">
-                        <h3>Support Them Without the Maths</h3>
-                        <p>Learn how to spot when your child is stuck, how to keep them on track, and what the real exam
-                            pressure points are &mdash; no advanced maths required from you.</p>
+                        <h3>Focused Edexcel A-Level Maths Help</h3>
+                        <p>Support built around exactly what comes up in the Edexcel exams &mdash; so your child spends
+                            time only on what actually moves the grade.</p>
                     </div>
                 </div>
                 <div class="card feature-card">
@@ -214,51 +231,38 @@
                     </div>
                     <div class="feature-content">
                         <h3>A Community of Parents</h3>
-                        <p>You're not doing this alone. Connect with other parents going through the exact same journey
-                            &mdash; share what works, and learn from those a step ahead.</p>
+                        <p>You're not doing this alone. Join other parents going through the exact same A-Level journey
+                            &mdash; share what works and learn from those a step ahead.</p>
                     </div>
                 </div>
                 <div class="card feature-card">
                     <div class="card-icon accent">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-                            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                         </svg>
                     </div>
                     <div class="feature-content">
-                        <h3>A Direct Line on Progress</h3>
-                        <p>A genuinely high-touch service: an open line of communication on how your child is really
-                            doing, so you always know where they are and what they need next.</p>
+                        <h3>Support Them Without the Maths</h3>
+                        <p>Learn how to spot when your child is stuck and how to keep them on track &mdash; no advanced
+                            maths required from you.</p>
                     </div>
                 </div>
-                <div class="card feature-card">
-                    <div class="card-icon accent">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <circle cx="12" cy="8" r="7" />
-                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Grades That Open Doors</h3>
-                        <p>The whole system is built around the A* &mdash; the grade that turns a hopeful application
-                            into a confident one at the most competitive universities.</p>
-                    </div>
-                </div>
-                <div class="card feature-card">
-                    <div class="card-icon accent">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Peace of Mind</h3>
-                        <p>Stop worrying about whether your child is doing enough of the right thing. A clear roadmap
-                            means less stress at home &mdash; for them and for you.</p>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO (soft, secondary) Section -->
+    <section class="section pro-soft">
+        <div class="container animate-on-scroll">
+            <div class="card pro-card">
+                <span class="pro-tag">Optional, once you're inside</span>
+                <h2 class="pro-heading">Want the full thing? There's a Pro community.</h2>
+                <p class="pro-text">For families who want to go all-in, there's a Pro community with complete A-Level
+                    Maths tutoring and the full toolkit &mdash; walkthroughs, marking, and exam-style drilling. It's
+                    something you can explore at your own pace once you're inside the free community. No pressure, and
+                    nothing to decide today.</p>
+                <a id="pro-link" class="btn btn-outline" href="#">Learn about Pro</a>
             </div>
         </div>
     </section>
@@ -272,23 +276,23 @@
             <div class="steps-wrapper">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Join the Free Community</h3>
-                    <p>Join the free parent community on Skool in one click. Get instant access to the guidance, the
-                        roadmap, and other parents. No card, no commitment.</p>
+                    <h3>Get the Roadmap</h3>
+                    <p>Enter your email and we'll send you the free, personalised University Roadmap for your child's
+                        A-Level Maths.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Learn the Roadmap</h3>
-                    <p>Follow the structured guidance on supporting A-Level maths and navigating the university
-                        application process &mdash; step by step, at your own pace.</p>
+                    <h3>Join the Free Community</h3>
+                    <p>Step inside the free community to put the roadmap into action, with the Edexcel-focused support and
+                        other parents alongside you.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Watch Them Thrive</h3>
-                    <p>Support your child with confidence, keep them on track for the grades they need, and help them
-                        secure the university place they're aiming for.</p>
+                    <h3>Support Them to the A*</h3>
+                    <p>Keep your child on track for the grade they need &mdash; and the university place that comes with
+                        it.</p>
                 </div>
             </div>
         </div>
@@ -303,16 +307,16 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Is the parent community really free?</span>
+                        <span>What exactly do I get for free?</span>
                         <svg class="icon-toggle" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes &mdash; the parent community on Skool is completely free to join, no card needed. Inside
-                            you'll find practical guidance on supporting your child through A-Level maths and the
-                            university application process, plus a community of parents going through the same thing.</p>
+                        <p>Enter your email and we'll send you a free personalised University Roadmap &mdash; the path
+                            from where your child is now to the A-Level Maths grades top universities want. You can then
+                            join our free community for ongoing support, with no card needed.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -324,35 +328,34 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Not at all. The community is built so you can support your child without needing to do the
-                            maths yourself &mdash; you'll learn how to spot when they're stuck, how to keep them on
-                            track, and where the real exam pressure points are.</p>
+                        <p>No. Everything is built so you can support your child without doing the maths yourself &mdash;
+                            you'll see where they are, what the real exam pressure points are, and how to keep them on
+                            track for an A or A*.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Does this also help with university applications?</span>
+                        <span>Is this specifically for Edexcel A-Level Maths?</span>
                         <svg class="icon-toggle" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. Alongside the A-Level maths support, the community covers the university application
-                            journey &mdash; UCAS, personal statements, choosing courses, and how strong grades open
-                            doors to top universities.</p>
+                        <p>Yes. A* Machine is focused A-Level Maths help built around the Edexcel specification, aimed
+                            squarely at students working towards an A or A* grade.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>My child is the one studying — should they join too?</span>
+                        <span>My child is the one studying — is there something for them?</span>
                         <svg class="icon-toggle" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Absolutely. There's a dedicated free community for students with the full A-Level maths
+                        <p>Yes &mdash; there's a dedicated free community for students with the full A-Level Maths
                             roadmap, walkthroughs and drilling. <a href="index.html" style="color: var(--accent-primary);">Head to the student side &rarr;</a></p>
                     </div>
                 </div>
@@ -363,14 +366,14 @@
     <!-- Final CTA Section -->
     <section class="section final-cta">
         <div class="container center animate-on-scroll">
-            <h2 class="section-title">Give your child the best shot at university.</h2>
-            <p class="section-subtitle">Join a free community of parents helping their children succeed in A-Level maths and win the university places they're working towards.</p>
-            <a href="https://www.skool.com/help-your-child-get-into-uni-3636/about" target="_blank" rel="noopener" class="btn btn-primary lg">Join the Free Parent Community</a>
+            <h2 class="section-title">Give your child the best shot at the grade.</h2>
+            <p class="section-subtitle">Start with the free University Roadmap, then join a free community of parents helping their children towards an A* in A-Level Maths.</p>
+            <a href="#lead-capture" class="btn btn-primary lg" data-scroll-capture>Get the free University Roadmap</a>
             <p class="reassurance" style="margin-top: 1rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
-                100% free to join &middot; No card needed
+                Free &middot; No card needed
             </p>
         </div>
     </section>
@@ -380,7 +383,7 @@
             <div class="footer-links">
                 <a href="index.html">For Students</a>
                 <a href="about.html">About</a>
-                <a href="https://www.skool.com/help-your-child-get-into-uni-3636/about" target="_blank" rel="noopener">Parent Community</a>
+                <a href="#lead-capture" data-scroll-capture>Get the roadmap</a>
                 <a href="privacy.html">Privacy</a>
             </div>
             <p>&copy; 2026 A* Machine. All rights reserved.</p>
@@ -395,7 +398,122 @@
         </svg>
     </a>
 
+    <!-- ===== Consent banner (non-essential cookies / Meta Pixel) ===== -->
+    <div id="consent-banner" class="consent-banner" role="dialog" aria-label="Cookie consent" hidden>
+        <p>We'd like to use cookies to measure our ads. These are non-essential &mdash; you can decline and the page
+            still works fully. See our <a href="privacy.html">privacy policy</a>.</p>
+        <div class="consent-actions">
+            <button id="consent-decline" type="button" class="btn btn-outline sm">Decline</button>
+            <button id="consent-accept" type="button" class="btn btn-primary sm">Accept</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+
+    <!-- ===== Parent landing page: capture + consent-gated pixel ===== -->
+    <script>
+        (function () {
+            // ----- Configuration placeholders (replace before going live) -----
+            const META_PIXEL_ID = "META_PIXEL_ID";                 // TODO: real Meta Pixel ID
+            const N8N_WEBHOOK_URL = "N8N_WEBHOOK_URL";             // TODO: real N8N webhook URL
+            const SKOOL_FREE_COMMUNITY_URL = "https://www.skool.com/help-your-child-get-into-uni-3636/about";
+            const PRO_COMMUNITY_URL = "";                          // optional; empty => Pro section has no link
+
+            const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const CONSENT_KEY = "am_consent";
+
+            // ----- Meta Pixel (loaded ONLY after consent) -----
+            function pixelConfigured() { return META_PIXEL_ID && META_PIXEL_ID !== "META_PIXEL_ID"; }
+            function loadPixel() {
+                if (window.fbq || !pixelConfigured()) return;
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+                    t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+                }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+                window.fbq('init', META_PIXEL_ID);
+                window.fbq('track', 'PageView');
+            }
+
+            // ----- Consent banner -----
+            const banner = document.getElementById('consent-banner');
+            function hideBanner() { if (banner) banner.hidden = true; }
+            (function initConsent() {
+                const v = localStorage.getItem(CONSENT_KEY);
+                if (v === 'granted') { loadPixel(); hideBanner(); }
+                else if (v === 'denied') { hideBanner(); }
+                else if (banner) { banner.hidden = false; }
+            })();
+            const acceptBtn = document.getElementById('consent-accept');
+            const declineBtn = document.getElementById('consent-decline');
+            if (acceptBtn) acceptBtn.addEventListener('click', function () { localStorage.setItem(CONSENT_KEY, 'granted'); loadPixel(); hideBanner(); });
+            if (declineBtn) declineBtn.addEventListener('click', function () { localStorage.setItem(CONSENT_KEY, 'denied'); hideBanner(); });
+
+            // ----- Lead capture (two-state) -----
+            const input = document.getElementById('parent-email');
+            const btn = document.getElementById('capture-btn');
+            const stateA = document.getElementById('state-a');
+            const stateB = document.getElementById('state-b');
+            const joinBtn = document.getElementById('join-btn');
+
+            function setEnabled(on) {
+                if (!btn) return;
+                btn.disabled = !on;
+                btn.setAttribute('aria-disabled', String(!on));
+            }
+            if (input) input.addEventListener('input', function () {
+                setEnabled(EMAIL_RE.test(input.value.trim()));
+            });
+            if (joinBtn) joinBtn.href = SKOOL_FREE_COMMUNITY_URL;
+
+            if (btn) btn.addEventListener('click', function () {
+                const email = input ? input.value.trim() : '';
+                if (!EMAIL_RE.test(email)) return;        // guard
+                setEnabled(false);
+                btn.textContent = 'Sending…';
+
+                // 1) Fire Lead (fbq only exists if consent was granted)
+                if (window.fbq) window.fbq('track', 'Lead');
+
+                // 2) POST { email } as JSON — PII in body only, never the URL
+                if (N8N_WEBHOOK_URL && N8N_WEBHOOK_URL !== 'N8N_WEBHOOK_URL') {
+                    fetch(N8N_WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email: email })
+                    }).catch(function (err) { console.error('Lead webhook failed (continuing):', err); });
+                }
+
+                // 3) Transition to State B regardless of webhook outcome
+                if (stateA) stateA.hidden = true;
+                if (stateB) stateB.hidden = false;
+                if (joinBtn) joinBtn.focus();
+            });
+
+            if (joinBtn) joinBtn.addEventListener('click', function () {
+                // Diagnostic only: lets us measure email -> join-click drop-off later
+                if (window.fbq) window.fbq('trackCustom', 'JoinClick');
+                // Navigation proceeds via the anchor's href
+            });
+
+            // ----- Pro section optional link -----
+            const proLink = document.getElementById('pro-link');
+            if (proLink) {
+                if (PRO_COMMUNITY_URL) { proLink.href = PRO_COMMUNITY_URL; }
+                else { proLink.remove(); }   // render Pro section without a link if none configured
+            }
+
+            // ----- "Get the roadmap" buttons scroll to the capture & focus input -----
+            document.querySelectorAll('[data-scroll-capture]').forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const cap = document.getElementById('lead-capture');
+                    if (cap) cap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    if (input && stateA && !stateA.hidden) setTimeout(function () { input.focus(); }, 400);
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
