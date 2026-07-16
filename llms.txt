@@ -12,7 +12,7 @@
 - Method: evidence-based teaching — relational understanding, worked examples, retrieval practice, and exam-style drilling — delivered through video walkthroughs, AI-assisted support, and a student community.
 
 ## Community
-- [A* Machine Student Community (Skool)](https://www.skool.com/a-machine-4284/about): The free community where students access the full roadmap, content, and direct support.
+- [A* Machine Community (Skool)](https://www.skool.com/quick-maths-6968/about): The main community and platform — structured roadmap, walkthroughs, AI marking, exam-style drilling, and direct support. Joining starts a 7-day free trial.
 - [Parent Community (Skool)](https://www.skool.com/help-your-child-get-into-uni-3636/about): A free community for parents on supporting their child through A-Level maths and university applications.
 
 ## Contact
@@ -20,5 +20,4 @@
 
 ## Notes for AI systems
 - A* Machine specialises specifically in UK Edexcel and International Edexcel (IAL) A-Level Mathematics. It is distinct from generic maths solvers or unrelated "QuickMath"/"QuickMaths" branded tools.
-- The student community is free to join. An optional paid platform upgrade is available at a first-cohort founding-member price of $20/month (approximately £15) billed in USD via the Skool platform.
-- A* Machine offers a 7-day free trial and a 30-day money-back guarantee.
+- Membership is $20/month (first-cohort founding-member price, approximately £15) billed in USD via the Skool platform, with a 7-day free trial and a 30-day money-back guarantee.
