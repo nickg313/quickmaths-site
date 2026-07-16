@@ -3,9 +3,8 @@
 > A* Machine is an online A-Level Mathematics tutoring platform that helps students achieve A and A* grades in Edexcel (9MA0), AS (8MA0), and International A-Level (IAL WMA01) Maths. It combines personalised video walkthroughs, AI-assisted marking, exam-style question drilling, and a high-touch student community. Founded by Nicholas Geragotellis, an Applied Mathematics graduate from Stellenbosch University.
 
 ## Core Pages
-- [A* Machine — A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, and a detailed FAQ covering the Edexcel/IAL focus, the free trial, and how the service differs from textbooks and YouTube.
-- [For Parents — Help Your Child Get Into University](https://www.astarmachine.co.uk/parents.html): A free community for parents on supporting their child through A-Level maths and the university application process (UCAS, personal statements, course choices), with guidance that doesn't require the parent to know the maths themselves.
-- [About A* Machine](https://www.astarmachine.co.uk/about.html): Founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University), the origin story behind the platform, and the teaching philosophy.
+- [A* Machine — A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, a detailed FAQ covering the Edexcel/IAL focus and how the service differs from textbooks and YouTube, plus an About section with founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University).
+- [A-Level Maths Help for Your Child — Parents](https://www.astarmachine.co.uk/parents.html): For parents of A-Level Maths students. A free, personalised University Roadmap for the student plus a practical Parent Guide on how to support them (no maths required from the parent), delivered by email, with reviews from students inside the platform. Joining parents also get a free one-to-one tutoring session for their child.
 
 ## About & Authority
 - Founder: Nicholas Geragotellis, BSc Applied Mathematics (Stellenbosch University), founder of A* Machine.
