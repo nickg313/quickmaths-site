@@ -3,16 +3,16 @@
 > A* Machine is an online A-Level Mathematics tutoring platform that helps students achieve A and A* grades in Edexcel (9MA0), AS (8MA0), and International A-Level (IAL WMA01) Maths. It combines personalised video walkthroughs, AI-assisted marking, exam-style question drilling, and a high-touch student community. Founded by Nicholas Geragotellis, an Applied Mathematics graduate from Stellenbosch University.
 
 ## Core Pages
-- [A* Machine — A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, a detailed FAQ covering the Edexcel/IAL focus and how the service differs from textbooks and YouTube, plus an About section with founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University).
-- [A-Level Maths Help for Your Child — Parents](https://www.astarmachine.co.uk/parents.html): For parents of A-Level Maths students. A free, personalised University Roadmap for the student plus a practical Parent Guide on how to support them (no maths required from the parent), delivered by email, with reviews from students inside the platform. Joining parents also get a free one-to-one tutoring session for their child.
+- [A* Machine: A-Level Maths Tutoring (Home)](https://www.astarmachine.co.uk/): Overview of the platform, what's included in membership, who it's for, pricing, a detailed FAQ covering the Edexcel/IAL focus and how the service differs from textbooks and YouTube, plus an About section with founder background and credentials (Nicholas Geragotellis, BSc Applied Mathematics, Stellenbosch University).
+- [A-Level Maths Help for Your Child (Parents)](https://www.astarmachine.co.uk/parents.html): For parents of A-Level Maths students. A free, personalised University Roadmap for the student plus a practical Parent Guide on how to support them (no maths required from the parent), delivered by email, with reviews from students inside the platform. Joining parents also get a free one-to-one tutoring session for their child.
 
 ## About & Authority
 - Founder: Nicholas Geragotellis, BSc Applied Mathematics (Stellenbosch University), founder of A* Machine.
 - Focus: UK Pearson Edexcel A-Level Maths (9MA0), AS Maths (8MA0), and International A-Level Maths (IAL / WMA01).
-- Method: evidence-based teaching — relational understanding, worked examples, retrieval practice, and exam-style drilling — delivered through video walkthroughs, AI-assisted support, and a student community.
+- Method: evidence-based teaching (relational understanding, worked examples, retrieval practice, and exam-style drilling) delivered through video walkthroughs, AI-assisted support, and a student community.
 
 ## Community
-- [A* Machine Community (Skool)](https://www.skool.com/quick-maths-6968/about): The main community and platform — structured roadmap, walkthroughs, AI marking, exam-style drilling, and direct support. Joining starts a 7-day free trial.
+- [A* Machine Community (Skool)](https://www.skool.com/quick-maths-6968/about): The main community and platform, with the structured roadmap, walkthroughs, AI marking, exam-style drilling, and direct support. Joining starts a 7-day free trial.
 - [Parent Community (Skool)](https://www.skool.com/help-your-child-get-into-uni-3636/about): A free community for parents on supporting their child through A-Level maths and university applications.
 
 ## Contact
