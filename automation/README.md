@@ -28,8 +28,9 @@ lead is NOT stored or emailed anywhere. Wiring this up is required for the funne
    two dropdowns. The column mapping is pre-filled to match those headers.
 4. **Activate** the workflow (toggle top-right), then copy the webhook's
    **Production URL** from the Webhook node.
-5. In `parents.html`, find `const N8N_WEBHOOK_URL = "N8N_WEBHOOK_URL"` and replace the
-   placeholder with the Production URL. Commit and deploy.
+5. Already done: `parents.html` posts to the production URL
+   (`https://nickg123.app.n8n.cloud/webhook/parent-lead`). If the webhook ever moves,
+   update `const N8N_WEBHOOK_URL` in `parents.html` and redeploy.
 6. Test: submit the live form with your own name and email. You should get the email
    within seconds, a new row should appear in the sheet, and the n8n execution log
    should show a successful run.
