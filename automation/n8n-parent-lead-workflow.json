@@ -30,7 +30,39 @@
       "name": "Send email from Nick",
       "type": "n8n-nodes-base.microsoftOutlook",
       "typeVersion": 2,
-      "position": [220, 0]
+      "position": [220, -80]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{ $now.toISO() }}",
+            "First name": "={{ $json.body.firstName }}",
+            "Email": "={{ $json.body.email }}"
+          },
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      },
+      "id": "f0a1b2c3-1111-4111-8111-000000000003",
+      "name": "Log lead to Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [220, 120],
+      "onError": "continueRegularOutput"
     }
   ],
   "connections": {
@@ -39,6 +71,11 @@
         [
           {
             "node": "Send email from Nick",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Log lead to Google Sheets",
             "type": "main",
             "index": 0
           }
