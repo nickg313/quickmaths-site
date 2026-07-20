@@ -763,6 +763,7 @@ a {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
+.consent-banner[hidden] { display: none; }
 .consent-banner p { margin: 0; max-width: 620px; }
 .consent-banner a { color: var(--accent-bright); text-decoration: underline; }
 .consent-actions { display: flex; gap: 0.75rem; flex-shrink: 0; }
