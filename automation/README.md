@@ -1,10 +1,11 @@
 # Parent lead automation (n8n)
 
-The lead form on `parents.html` collects **first name + email** and POSTs them as JSON
-(`{ "firstName": "...", "email": "..." }`) to an n8n webhook. This folder holds the
-matching n8n workflow, which does two things with each lead: sends the welcome email
-from nick@quickmath.io with the free Skool community link, and appends a row
-(timestamp, first name, email) to a Google Sheet so every lead is tracked.
+The lead form on `parents.html` collects **first name + last name + email** and POSTs
+them as JSON (`{ "firstName": "...", "lastName": "...", "email": "..." }`) to an n8n
+webhook. This folder holds the matching n8n workflow, which does two things with each
+lead: sends the welcome email from nick@quickmath.io with the free Skool community
+link, and appends a row (timestamp, first name, last name, email) to a Google Sheet
+so every lead is tracked.
 
 Until the webhook URL is configured, the form shows the confirmation screen but the
 lead is NOT stored or emailed anywhere. Wiring this up is required for the funnel to work.
@@ -21,7 +22,7 @@ lead is NOT stored or emailed anywhere. Wiring this up is required for the funne
    JSON file. (Fallback if OAuth is blocked by your tenant: the generic **Send Email**
    SMTP node with Microsoft 365 SMTP AUTH, host smtp.office365.com, port 587.)
 3. Create a Google Sheet for the lead log (e.g. "A* Machine Leads") with this exact
-   header row in row 1: **Timestamp | First name | Email**. Then open the
+   header row in row 1: **Timestamp | First name | Last name | Email**. Then open the
    **Log lead to Google Sheets** node, attach a Google credential (sign in with the
    Google account that owns the sheet), and pick the spreadsheet and sheet from the
    two dropdowns. The column mapping is pre-filled to match those headers.

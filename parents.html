@@ -88,6 +88,8 @@
                     <div class="capture-row">
                         <input id="parent-name" name="firstName" type="text" autocomplete="given-name"
                             placeholder="First name" aria-label="First name" class="capture-name" />
+                        <input id="parent-lastname" name="lastName" type="text" autocomplete="family-name"
+                            placeholder="Last name" aria-label="Last name" class="capture-name" />
                         <input id="parent-email" name="email" type="email" inputmode="email" autocomplete="email"
                             placeholder="your@email.com" aria-describedby="privacy-note" aria-label="Email address" />
                     </div>
@@ -313,6 +315,7 @@
 
             // ----- Lead capture (two-state) -----
             const nameInput = document.getElementById('parent-name');
+            const lastNameInput = document.getElementById('parent-lastname');
             const input = document.getElementById('parent-email');
             const btn = document.getElementById('capture-btn');
             const stateA = document.getElementById('state-a');
@@ -326,15 +329,18 @@
             }
             function formValid() {
                 const nameOk = nameInput && nameInput.value.trim().length >= 2;
+                const lastNameOk = lastNameInput && lastNameInput.value.trim().length >= 2;
                 const emailOk = input && EMAIL_RE.test(input.value.trim());
-                return nameOk && emailOk;
+                return nameOk && lastNameOk && emailOk;
             }
             if (input) input.addEventListener('input', function () { setEnabled(formValid()); });
             if (nameInput) nameInput.addEventListener('input', function () { setEnabled(formValid()); });
+            if (lastNameInput) lastNameInput.addEventListener('input', function () { setEnabled(formValid()); });
             if (joinBtn) joinBtn.href = SKOOL_FREE_COMMUNITY_URL;
 
             if (btn) btn.addEventListener('click', function () {
                 const firstName = nameInput ? nameInput.value.trim() : '';
+                const lastName = lastNameInput ? lastNameInput.value.trim() : '';
                 const email = input ? input.value.trim() : '';
                 if (!formValid()) return;        // guard
                 setEnabled(false);
@@ -343,12 +349,12 @@
                 // 1) Fire Lead (fbq only exists if consent was granted)
                 if (window.fbq) window.fbq('track', 'Lead');
 
-                // 2) POST { firstName, email } as JSON — PII in body only, never the URL
+                // 2) POST { firstName, lastName, email } as JSON — PII in body only, never the URL
                 if (N8N_WEBHOOK_URL && N8N_WEBHOOK_URL !== 'N8N_WEBHOOK_URL') {
                     fetch(N8N_WEBHOOK_URL, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ firstName: firstName, email: email })
+                        body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email })
                     }).catch(function (err) { console.error('Lead webhook failed (continuing):', err); });
                 }
 

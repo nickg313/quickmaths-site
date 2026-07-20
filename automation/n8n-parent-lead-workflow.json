@@ -50,6 +50,7 @@
           "value": {
             "Timestamp": "={{ $now.toISO() }}",
             "First name": "={{ $json.body.firstName }}",
+            "Last name": "={{ $json.body.lastName }}",
             "Email": "={{ $json.body.email }}"
           },
           "matchingColumns": [],
