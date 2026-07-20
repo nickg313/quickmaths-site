@@ -1,0 +1,48 @@
+{
+  "name": "Parent lead: welcome email with Skool link",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "parent-lead",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "f0a1b2c3-1111-4111-8111-000000000001",
+      "name": "Lead webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "parent-lead"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.body.email }}",
+        "subject": "={{ $json.body.firstName }}, your University Roadmap is ready",
+        "emailType": "text",
+        "message": "=Hi {{ $json.body.firstName }},\n\nNick here from A* Machine. Thanks for requesting the University Roadmap and Parent Guide.\n\nBoth are waiting for you inside our free parent community, along with the booking link for your child's free one-to-one tutoring session. Join here:\n\nhttps://www.skool.com/help-your-child-get-into-uni-3636/about\n\nIf you have any questions, just reply to this email. I read every one.\n\nNick\nFounder, A* Machine\nhttps://www.astarmachine.co.uk",
+        "options": {}
+      },
+      "id": "f0a1b2c3-1111-4111-8111-000000000002",
+      "name": "Send email from Nick",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [220, 0]
+    }
+  ],
+  "connections": {
+    "Lead webhook": {
+      "main": [
+        [
+          {
+            "node": "Send email from Nick",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "pinData": {}
+}
