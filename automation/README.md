@@ -11,11 +11,14 @@ lead is NOT stored or emailed anywhere. Wiring this up is required for the funne
 ## Setup (about 10 minutes)
 
 1. In n8n: **Workflows → Import from File** → pick `n8n-parent-lead-workflow.json`.
-2. Open the **Send email from Nick** node and attach your Gmail credential for
-   nick@quickmath.io (n8n walks you through the Google sign-in the first time).
+2. Open the **Send email from Nick** node and attach a **Microsoft Outlook** credential
+   for nick@quickmath.io (n8n walks you through the Microsoft sign-in the first time;
+   this is the right node for a business Microsoft 365 / Outlook mailbox).
    If the import ever misbehaves, the workflow is trivial to rebuild by hand:
    a **Webhook** node (POST, path `parent-lead`, respond immediately) connected to a
-   **Gmail → Send Message** node using the fields/expressions from the JSON file.
+   **Microsoft Outlook → Send a message** node using the fields/expressions from the
+   JSON file. (Fallback if OAuth is blocked by your tenant: the generic **Send Email**
+   SMTP node with Microsoft 365 SMTP AUTH, host smtp.office365.com, port 587.)
 3. **Activate** the workflow (toggle top-right), then copy the webhook's
    **Production URL** from the Webhook node.
 4. In `parents.html`, find `const N8N_WEBHOOK_URL = "N8N_WEBHOOK_URL"` and replace the

@@ -17,16 +17,19 @@
     },
     {
       "parameters": {
-        "sendTo": "={{ $json.body.email }}",
+        "resource": "message",
+        "operation": "send",
+        "toRecipients": "={{ $json.body.email }}",
         "subject": "={{ $json.body.firstName }}, your University Roadmap is ready",
-        "emailType": "text",
-        "message": "=Hi {{ $json.body.firstName }},\n\nNick here from A* Machine. Thanks for requesting the University Roadmap and Parent Guide.\n\nBoth are waiting for you inside our free parent community, along with the booking link for your child's free one-to-one tutoring session. Join here:\n\nhttps://www.skool.com/help-your-child-get-into-uni-3636/about\n\nIf you have any questions, just reply to this email. I read every one.\n\nNick\nFounder, A* Machine\nhttps://www.astarmachine.co.uk",
-        "options": {}
+        "bodyContent": "=Hi {{ $json.body.firstName }},\n\nNick here from A* Machine. Thanks for requesting the University Roadmap and Parent Guide.\n\nBoth are waiting for you inside our free parent community, along with the booking link for your child's free one-to-one tutoring session. Join here:\n\nhttps://www.skool.com/help-your-child-get-into-uni-3636/about\n\nIf you have any questions, just reply to this email. I read every one.\n\nNick\nFounder, A* Machine\nhttps://www.astarmachine.co.uk",
+        "additionalFields": {
+          "bodyContentType": "Text"
+        }
       },
       "id": "f0a1b2c3-1111-4111-8111-000000000002",
       "name": "Send email from Nick",
-      "type": "n8n-nodes-base.gmail",
-      "typeVersion": 2.1,
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
       "position": [220, 0]
     }
   ],
