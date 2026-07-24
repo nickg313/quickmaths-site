@@ -683,47 +683,7 @@
 
     <script src="script.js"></script>
 
-    <!-- Restyle the wide Senja carousel embed to match the other testimonial cards:
-         transparent frame instead of purple, full-width static card, no arrows.
-         Senja renders into an open shadow root, so the overrides are injected there. -->
-    <script>
-        (function () {
-            var EMBED_ID = "2544699e-cc76-4dc5-b85d-1e02f4e3e5be";
-            var STYLE_ID = "am-senja-restyle";
-            var CSS = [
-                ".glide { background: transparent !important; padding: 0 !important; }",
-                ".max-w-2xl { max-width: none !important; }",
-                ".glide__track { height: auto !important; }",
-                ".glide__track, .glide__slides { width: 100% !important; transform: none !important; }",
-                ".glide__slide { width: 100% !important; }",
-                ".glide__arrows { display: none !important; }"
-            ].join("\n");
-
-            function apply(root) {
-                if (!root.getElementById(STYLE_ID)) {
-                    var style = document.createElement("style");
-                    style.id = STYLE_ID;
-                    style.textContent = CSS;
-                    root.appendChild(style);
-                }
-            }
-
-            var tries = 0;
-            var timer = setInterval(function () {
-                var host = document.querySelector('.senja-embed[data-id="' + EMBED_ID + '"]');
-                var root = host && host.shadowRoot;
-                if (root) {
-                    clearInterval(timer);
-                    apply(root);
-                    // Re-apply if Senja re-renders and drops the injected style
-                    new MutationObserver(function () { apply(root); })
-                        .observe(root, { childList: true });
-                } else if (++tries > 80) {
-                    clearInterval(timer); // widget never appeared; leave default styling
-                }
-            }, 250);
-        })();
-    </script>
+    <!-- Senja carousel embeds are restyled to match the plain cards in script.js -->
 </body>
 
 </html>
