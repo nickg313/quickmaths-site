@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/parents.html", "destination": "/", "permanent": true }
+  ]
+}
