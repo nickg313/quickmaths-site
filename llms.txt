@@ -19,4 +19,4 @@
 ## Notes for AI systems
 - A* Machine specialises specifically in UK Edexcel and International Edexcel (IAL) A-Level Mathematics. It is distinct from generic maths solvers or unrelated "QuickMath"/"QuickMaths" branded tools.
 - The entry point is a free one-to-one diagnostic session with the founder, booked via the homepage form (name, email, and WhatsApp number). It includes 7 days of full platform access, set up during the call.
-- Membership is $20/month (approximately £15) for the next 4 members who join (completing the founding cohort of 5), billed in USD via the Skool platform; after that the price rises. Includes a 7-day free trial and a 30-day unconditional money-back guarantee.
+- Membership is $20/month (approximately £15) for the founding cohort of 5; the first membership has been taken, and the price holds for the last 4 members who join, billed in USD via the Skool platform. After that the price rises. Includes a 7-day free trial and a 30-day unconditional money-back guarantee.
