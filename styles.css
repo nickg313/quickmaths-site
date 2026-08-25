@@ -2197,6 +2197,11 @@ h1.hero-title--statement {
 
 .slots-chip .chip-short { display: none; }
 
+/* Mobile: keep the navbar CTA a comfortable touch target (~40px+) */
+@media (max-width: 640px) {
+  .navbar .btn.sm { padding: 0.65rem 1.05rem; }
+}
+
 @media (max-width: 480px) {
   .slots-chip { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
   .slots-chip .chip-full { display: none; }
