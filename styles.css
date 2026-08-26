@@ -2308,3 +2308,25 @@ h1.hero-title--statement {
   line-height: 1.6;
   color: rgba(248, 250, 252, 0.42);
 }
+
+/* --- Hero VSL --- */
+.vsl-frame {
+  margin: 2rem auto 0.5rem;
+  width: 100%;
+  max-width: 680px;
+}
+
+.vsl-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card-hover);
+  background: #0F172A;
+}
+
+@media (max-width: 640px) {
+  .vsl-frame { margin-top: 1.5rem; }
+  .vsl-frame video { border-radius: var(--radius-sm); }
+}

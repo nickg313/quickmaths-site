@@ -256,6 +256,11 @@
                 <strong>free one-to-one session</strong>, so you know exactly where the marks are slipping before you
                 spend a penny.</p>
 
+            <figure class="vsl-frame">
+                <video id="vsl" src="images/vsl.mp4" poster="images/vsl-poster.jpg" controls playsinline
+                    preload="metadata" aria-label="A two and a half minute video: why capable students lose marks at A-Level Maths, and how the free 1:1 session works"></video>
+            </figure>
+
             <div class="offer-stack" aria-label="What the free session includes">
                 <p class="offer-stack-title">The free session includes</p>
                 <ul>
@@ -1038,6 +1043,12 @@
                 if (stateA) stateA.hidden = true;
                 if (stateB) stateB.hidden = false;
             });
+
+            // ----- VSL: log first play (cookieless) -----
+            const vsl = document.getElementById('vsl');
+            if (vsl) vsl.addEventListener('play', function () {
+                if (window.plausible) window.plausible('VSL Play');
+            }, { once: true });
 
             // ----- "Book" buttons scroll to the capture & focus input -----
             document.querySelectorAll('[data-scroll-capture]').forEach(function (el) {
