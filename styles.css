@@ -2314,7 +2314,25 @@ h1.hero-title--statement {
   margin: 2rem auto 0.5rem;
   width: 100%;
   max-width: 680px;
+  position: relative;
 }
+
+/* Soft teal glow behind the video */
+.vsl-frame::before {
+  content: "";
+  position: absolute;
+  inset: -28px -36px;
+  background:
+    radial-gradient(closest-side at 25% 20%, rgba(45, 212, 191, 0.8), transparent 72%),
+    radial-gradient(closest-side at 78% 85%, rgba(13, 148, 136, 0.7), transparent 74%),
+    linear-gradient(135deg, rgba(45, 212, 191, 0.28), rgba(13, 148, 136, 0.22));
+  filter: blur(26px);
+  border-radius: 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.vsl-frame video { position: relative; z-index: 1; }
 
 .vsl-frame video {
   display: block;
@@ -2329,4 +2347,5 @@ h1.hero-title--statement {
 @media (max-width: 640px) {
   .vsl-frame { margin-top: 1.5rem; }
   .vsl-frame video { border-radius: var(--radius-sm); }
+  .vsl-frame::before { inset: -16px -18px; filter: blur(22px); }
 }
