@@ -239,7 +239,8 @@
             </a>
             <div class="nav-links">
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#lead-capture" class="btn btn-primary sm" data-scroll-capture>Book free session</a>
+                <a href="https://www.skool.com/quick-maths-6968/about" target="_blank" rel="noopener"
+                    id="nav-community" class="btn btn-outline sm">See the community</a>
             </div>
         </div>
     </nav>
@@ -1042,6 +1043,12 @@
                 // 3) Transition to State B regardless of webhook outcome
                 if (stateA) stateA.hidden = true;
                 if (stateB) stateB.hidden = false;
+            });
+
+            // ----- Navbar community link: log clicks (cookieless) -----
+            const navCommunity = document.getElementById('nav-community');
+            if (navCommunity) navCommunity.addEventListener('click', function () {
+                if (window.plausible) window.plausible('Community Click');
             });
 
             // ----- VSL: log first play (cookieless) -----
