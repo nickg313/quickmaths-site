@@ -997,6 +997,10 @@
             function cleanPhone() {
                 return phoneInput ? phoneInput.value.replace(/[\s().\-]/g, '') : '';
             }
+            function getCookie(name) {
+                const m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+                return m ? decodeURIComponent(m[1]) : '';
+            }
             function formValid() {
                 const nameOk = nameInput && nameInput.value.trim().length >= 2;
                 const lastNameOk = lastNameInput && lastNameInput.value.trim().length >= 2;
@@ -1017,16 +1021,24 @@
                 setEnabled(false);
                 btn.textContent = 'Sending…';
 
-                // 1) Conversion events: Meta Lead (only if consent granted) + Plausible (cookieless)
-                if (window.fbq) window.fbq('track', 'Lead');
+                // 1) Conversion events. The eventId is shared between the browser pixel and the
+                // server-side Conversions API event (sent via n8n) so Meta deduplicates them.
+                const eventId = (window.crypto && crypto.randomUUID)
+                    ? crypto.randomUUID()
+                    : 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+                if (window.fbq) window.fbq('track', 'Lead', {}, { eventID: eventId });
                 if (window.plausible) window.plausible('Session Lead');
 
-                // 2) POST { firstName, lastName, email, phone } as JSON; PII in body only, never the URL
+                // 2) POST as JSON; PII in body only, never the URL. fbp/fbc only exist if consent was granted.
                 if (N8N_WEBHOOK_URL && N8N_WEBHOOK_URL !== 'N8N_WEBHOOK_URL') {
                     fetch(N8N_WEBHOOK_URL, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email, phone: phone, source: 'session-offer' })
+                        body: JSON.stringify({
+                            firstName: firstName, lastName: lastName, email: email, phone: phone,
+                            source: 'session-offer', eventId: eventId, pageUrl: location.href,
+                            fbp: getCookie('_fbp'), fbc: getCookie('_fbc')
+                        })
                     }).catch(function (err) { console.error('Lead webhook failed (continuing):', err); });
                 }
 
